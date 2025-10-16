@@ -1,0 +1,3 @@
+65,Hanre,20,fly,77,98,99,S-Rank,Finals Week (threat to the entire academy)
+77,Mickayla,22,Super Short,88,92,67,S-Rank,Finals Week (threat to the entire academy)
+34,Tanya,45,Shape Shifting,67,88,87,A-Rank,Midterm Madness (threat to a department)
