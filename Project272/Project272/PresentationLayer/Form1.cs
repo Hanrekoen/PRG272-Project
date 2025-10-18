@@ -100,7 +100,7 @@ namespace Project272
 
         
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)//Clear button
         {
             IDtextBox.Clear();
             NametextBox.Clear();
@@ -117,13 +117,13 @@ namespace Project272
 
         }
 
-        private void btnUpdate_Click(object sender, EventArgs e)
+        private void btnUpdate_Click(object sender, EventArgs e)// Update button
         {
             heroManager.UpdateHeroes(heroes.ToList());
             MessageBox.Show("Heroes updated successfully.");
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
+        private void btnDelete_Click(object sender, EventArgs e)// Delete button
         {
             if (dataGridView1.SelectedRows.Count > 0)
             {
@@ -141,13 +141,13 @@ namespace Project272
             }
         }
 
-        private void btnReport_Click(object sender, EventArgs e)
+        private void btnReport_Click(object sender, EventArgs e)// report button which generates summary report
         {
             var ReportText = heroManager.GenerateSummary(heroes.ToList());
             MessageBox.Show(ReportText, "Hero Summary Report");
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)// populate text boxes when a row is clicked
         {
             if (e.RowIndex < 0 ) return;
 
@@ -166,3 +166,4 @@ namespace Project272
         }
     }
 }
+

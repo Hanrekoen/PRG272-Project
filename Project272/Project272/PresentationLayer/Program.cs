@@ -9,9 +9,7 @@ namespace Project272
 {
     internal static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
+        
         [STAThread]
         static void Main()
         {
@@ -24,3 +22,4 @@ namespace Project272
         }
     }
 }
+
