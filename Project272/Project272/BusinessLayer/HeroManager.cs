@@ -13,7 +13,7 @@ namespace Project272.BusinessLayer
     {
         private readonly FileHandler fileHandler;
 
-        public HeroManager()
+        public HeroManager()//Added Hero Manager as constructor
         {
             fileHandler = new FileHandler();
         }
@@ -131,3 +131,4 @@ namespace Project272.BusinessLayer
 
     }
 }
+
