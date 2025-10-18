@@ -12,15 +12,15 @@ namespace Project272.DataLayer
 {
     public class FileHandler
     {
-        private readonly string datafile = "superheroes.txt";
-        private readonly string SummaryFile = "summary.txt";
+        private readonly string datafile = "superheroes.txt";//set the data file name
+        private readonly string SummaryFile = "summary.txt"; // set the summary file name
 
-        public List<SuperHero> LoadAll()
+        public List<SuperHero> LoadAll() // Method to load all superheroes from the data file
         {
             
             List<SuperHero> heroes = new List<SuperHero>();
 
-            if (!File.Exists(datafile))
+            if (!File.Exists(datafile))// Check if the data file exists
             {
                 FileStream createfile = new FileStream(datafile, FileMode.Create);
                 createfile.Close();
@@ -48,7 +48,7 @@ namespace Project272.DataLayer
 
 
         
-        public void SaveAll(List<SuperHero> heroes)
+        public void SaveAll(List<SuperHero> heroes) // Method to save all superheroes to the data file
         {
             string filename = datafile;
 
@@ -63,7 +63,7 @@ namespace Project272.DataLayer
             fs.Close();
         }
 
-        public void Append(SuperHero S)
+        public void Append(SuperHero S) // Method to add a new superhero to the data file
         {
             string filename = datafile;
 
@@ -76,7 +76,7 @@ namespace Project272.DataLayer
             fs.Close();
         }
 
-        public void SaveSummary(string summary)
+        public void SaveSummary(string summary)// Method to save the summary report to the summary file using create to overwrite existing file
         {
             string filename = SummaryFile;
 
@@ -90,3 +90,4 @@ namespace Project272.DataLayer
         }
     }
 }
+
