@@ -27,7 +27,7 @@ namespace Project272.BusinessLayer
             return $"{ID},{Name},{Age},{SuperPower},{Test1},{Test2},{Test3}";
         }
 
-        public void CalculateRank()
+        public void CalculateRank() // calculate rank and threat level based on average test scores
         {
             double FinalMark = (Test1 + Test2 + Test3) / 3;
 
@@ -55,14 +55,14 @@ namespace Project272.BusinessLayer
 
         }
 
-        public string ToRecordLine() 
+        public string ToRecordLine() //Add all properties together in a line for the text file with commas for spliting
         {  
             return ID + "," + Name + "," + Age + "," + SuperPower + "," + Test1 + "," + Test2 + "," + Test3 + "," + 
                 Rank + "," + ThreatLevel;
             
         }
 
-        public static SuperHero FromRecordLine(string recordLine)
+        public static SuperHero FromRecordLine(string recordLine) // Split the line from the text file into properties
         {
             if (string.IsNullOrWhiteSpace(recordLine)) return null;
 
@@ -97,3 +97,4 @@ namespace Project272.BusinessLayer
         }
     }
 }
+
