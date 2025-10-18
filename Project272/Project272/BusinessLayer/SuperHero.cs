@@ -83,18 +83,8 @@ namespace Project272.BusinessLayer
             return h;
         }
 
-        public void Reset()
-        {
-            ID = string.Empty;
-            Name = string.Empty;
-            Age = 0;
-            SuperPower = string.Empty;
-            Test1 = 0;
-            Test2 = 0;
-            Test3 = 0;
-            Rank = string.Empty;
-            ThreatLevel = string.Empty;
-        }
+        
     }
 }
+
 
