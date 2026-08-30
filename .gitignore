@@ -1,0 +1,32 @@
+## Visual Studio / .NET
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+
+# Visual Studio workspace and cache
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vsidx
+
+# Build logs and caches
+*.cache
+*.log
+*.tlog
+
+# NuGet
+packages/
+*.nupkg
+
+# Local config - never commit credentials
+*.local.config
+connections.config
+.env
